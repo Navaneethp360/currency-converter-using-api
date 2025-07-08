@@ -13,6 +13,11 @@ A simple and elegant **Currency Converter** web app that fetches live exchange r
 - Accessibility optimized with proper labels and keyboard support.
 
 ---
+## 🚀 Demo
+
+https://navaneethp360.github.io/currency-converter-using-api/
+
+---
 
 ## Screenshots
 
