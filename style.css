@@ -1,0 +1,187 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('sonoma.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+}
+/* Glass Container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Inputs & Selects */
+input, select {
+  width: 93%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  backdrop-filter: blur(5px);
+}
+/* Placeholders in input */
+input::placeholder {
+  color: #e0e0e0;
+}
+
+/* Select dropdown arrow fix */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: rgba(0, 123, 255, 0.4); /* translucent tint */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: rgba(0, 123, 255, 0.5);
+}
+
+/* Result */
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Flexbox selectors */
+.selectors {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('sonoma.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+}
+/* Glass Container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Inputs & Selects */
+input, select {
+  width: 93%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  backdrop-filter: blur(5px);
+}
+/* Placeholders in input */
+input::placeholder {
+  color: #e0e0e0;
+}
+
+/* Select dropdown arrow fix */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: rgba(0, 123, 255, 0.4); /* translucent tint */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: rgba(0, 123, 255, 0.5);
+}
+
+/* Result */
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Flexbox selectors */
+.selectors {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size:  2.4rem;
+  font-weight: 900;
+  color: transparent;
+  background: rgba(255,255,255,0.6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  user-select: none;
+  text-align: center;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+
+
+
