@@ -20,8 +20,33 @@ A simple and elegant **Currency Converter** web app that fetches live exchange r
 
 ---
 
+
+## About the API
+This app uses FreeCurrencyAPI to fetch real-time exchange rates.
+
+## How the API Works
+Endpoint used:
+https://api.freecurrencyapi.com/v1/latest?apikey=YOUR_API_KEY
+
+The API returns exchange rates with USD as the base currency.
+
+The response is a JSON object containing currency codes and their corresponding exchange rates.
+
+---
+## Technologies Used
+HTML5
+
+CSS3 (Glassmorphism Design)
+
+JavaScript (ES6+)
+
+FreeCurrencyAPI
+
+---
+
 ## Installation & Usage
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Navaneethp360/currency-converter-using-api.git
+   
