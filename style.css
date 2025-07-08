@@ -16,91 +16,6 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 30px;
-  width: 320px;
-  text-align: center;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
-
-/* Inputs & Selects */
-input, select {
-  width: 93%;
-  padding: 12px;
-  margin-top: 15px;
-  border: none;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  outline: none;
-  backdrop-filter: blur(5px);
-}
-/* Placeholders in input */
-input::placeholder {
-  color: #e0e0e0;
-}
-
-/* Select dropdown arrow fix */
-select {
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-/* Button */
-button {
-  margin-top: 20px;
-  padding: 12px;
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  background: rgba(0, 123, 255, 0.4); /* translucent tint */
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background: rgba(0, 123, 255, 0.5);
-}
-
-/* Result */
-#result {
-  margin-top: 25px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-}
-
-/* Flexbox selectors */
-.selectors {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-/* Background */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: url('sonoma.jpg') no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  backdrop-filter: blur(4px);
-}
-/* Glass Container */
-.container {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 30px;
   width: 400px;
   text-align: center;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -112,15 +27,19 @@ body {
 
 /* Inputs & Selects */
 input, select {
-  width: 93%;
+  width: 100%;
   padding: 12px;
   margin-top: 15px;
   border: none;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.2); /* translucent white glass */
+  color: #222; /* dark text for readability */
   outline: none;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 1rem;
 }
 /* Placeholders in input */
 input::placeholder {
@@ -131,6 +50,11 @@ input::placeholder {
 select {
   appearance: none;
   -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%227%22%20viewBox%3D%220%200%2012%207%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%200l5%205%205-5z%22%20fill%3D%22%23222222%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 7px;
+  cursor: pointer;
 }
 
 /* Button */
@@ -140,7 +64,7 @@ button {
   width: 100%;
   border: none;
   border-radius: 10px;
-  background: rgba(0, 123, 255, 0.4); /* translucent tint */
+  background: rgba(0, 123, 255, 0.5); /* translucent tint */
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -150,7 +74,7 @@ button {
 }
 
 button:hover {
-  background: rgba(0, 123, 255, 0.5);
+  background: rgba(0, 123, 255, 0.6);
 }
 
 /* Result */
@@ -182,6 +106,32 @@ h1 {
   white-space: nowrap; /* Prevent line breaks */
 }
 
+.glass-pill {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.3s ease, color 0.3s ease;
+  z-index: 9999;
+}
+
+.glass-pill:hover,
+.glass-pill:focus {
+  background: rgba(255, 255, 255, 0.3);
+  color: #007bff; /* subtle accent on hover */
+  outline: none;
+}
 
 
 

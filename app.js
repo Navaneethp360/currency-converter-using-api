@@ -25,6 +25,7 @@ async function loadCurrencies() {
       toSelect.appendChild(option2);
     });
 
+    // Set default selections
     fromSelect.value = 'USD';
     toSelect.value = 'INR';
 
@@ -46,10 +47,24 @@ function convertCurrency() {
 
   const fromRate = currencyData[from];
   const toRate = currencyData[to];
+  if (!fromRate || !toRate) {
+    alert("Currency data unavailable for selected currency.");
+    return;
+  }
+
   const usdAmount = amount / fromRate;
   const converted = (usdAmount * toRate).toFixed(2);
 
   document.getElementById('result').innerText = `${amount} ${from} = ${converted} ${to}`;
 }
 
-window.onload = loadCurrencies;
+// Wait for page load, then load currencies and add submit event listener
+window.onload = async () => {
+  await loadCurrencies();
+
+  const form = document.getElementById('converterForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission reload
+    convertCurrency();
+  });
+};
